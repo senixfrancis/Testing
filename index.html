@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="font-[' Poppins'] bg-[#F7F7FC]">
+    <!-- Header -->
+    <div
+      class="flex flex-row justify-between shadow-md bg-white fixed z-10 w-full"
+    >
+      <div class="flex items-center">
+        <img class="h-8 w-12 m-2" src="../image/img/logo.svg" />
+        <img class="h-8 w-8 mx-1 my-2" src="../image/img/logo-2.png" />
+      </div>
+      <div class="flex flex-row">
+        <div class="px-4 py-5 border-x-[1px] border-gray-300">
+          <img class="h-5 w-5" src="../image/icon/bell.svg" />
+        </div>
+        <div class="flex flex-row">
+          <div class="flex flex-col pl-10 pr-4 text-right my-2">
+            <p class="text-[12px] text-black">Welcome!</p>
+            <h5 class="text-[18px] font-bold">Amy Smith</h5>
+          </div>
+          <div class="ml-0 mr-12 my-2">
+            <img class="h-10 w-10" src="../image/img/profile.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Side Bar  -->
+    <div class="flex">
+      <div
+        class="shadow-lg bg-white w-14 fixed nu-sidebar overflow-x-hidden transition-all mt-14"
+      >
+        <a class="cursor-pointer" onclick="sidebar()"
+          ><img class="h-4 w-4 mx-6 my-6" src="image/icon/menu.svg"
+        /></a>
+        <a class="flex items-center my-4"
+          ><img class="h-4 w-4 mx-6" src="image/icon/home.svg" />
+          <span>Home</span></a
+        >
+        <a class="flex items-center my-4"
+          ><img class="h-4 w-4 mx-6" src="image/icon/book.svg" /><span
+            >My Classes</span
+          ></a
+        >
+        <a class="flex items-center my-4"
+          ><img class="h-4 w-4 mx-6" src="image/icon/calendar.svg" /><span
+            >Calender</span
+          ></a
+        >
+        <a class="flex items-center my-4"
+          ><img class="h-4 w-4 mx-6" src="image/icon/mail.svg" /><span
+            >Mailbox</span
+          ></a
+        >
+        <a class="flex items-center my-4"
+          ><img class="h-4 w-4 mx-6" src="image/icon/account-friend.svg" /><span
+            >Profile</span
+          ></a
+        >
+        <a class="flex items-center my-4"
+          ><img class="h-4 w-4 mx-6" src="image/icon/settings.svg" /><span
+            >Settings</span
+          ></a
+        >
+        <a class="flex items-center my-4"
+          ><img class="h-4 w-4 mx-6" src="image/icon/help.svg" /><span
+            >Help</span
+          ></a
+        >
+        <a class="flex items-center mb-32 my-4"
+          ><img class="h-5 w-5 mx-6" src="image/icon/power.svg" /><span
+            >Logout</span
+          ></a
+        >
+      </div>
+      <!-- Main body -->
+      <div class="ml-20 mt-16">
+        <!-- Section 1 (Main) -->
+        <section class="flex justify-between my-8 lg:w-[97%]">
+          <div class="flex space-x-4">
+            <img class="h-10 w-10" src="../image/icon/back.png" />
+            <img class="h-12 w-12" src="../image/icon/monitor.svg" />
+            <div>
+              <h5 class="text-[18px]">2nd Grade - <strong>Math</strong></h5>
+              <p class="text-[13px] text-gray-400 w-full">
+                Statistics, Basics, Algebra, Integaral
+              </p>
+            </div>
+          </div>
+          <!-- Section 1 = Nav Bar -->
+          <div class="space-x-8 my-2 invisible xl:visible">
+            <a
+              class="text-[16px] font-medium underline decoration-[#4E59E0] decoration-2 underline-offset-[18px]"
+              >Home</a
+            >
+            <a class="text-[16px] text-gray-400 font-medium">People</a>
+            <a class="text-[16px] text-gray-400 font-medium">Journal</a>
+            <a class="text-[16px] text-gray-400 font-medium">Assignments</a>
+            <a class="text-[16px] text-gray-400 font-medium">Connect</a>
+            <a class="text-[16px] text-gray-400 font-medium">Mails</a>
+            <a class="text-[16px] text-gray-400 font-medium">Blog</a>
+            <a class="text-[16px] text-gray-400 font-medium">Insights</a>
+            <a class="text-[16px] text-gray-400 font-medium">Folders</a>
+            <a class="text-[16px] text-gray-400 font-medium">Reports</a>
+            <a class="text-[16px] text-gray-400 font-medium">Settings</a>
+          </div>
+        </section>
+        <div class="md:flex grid">
+          <!-- Section 2 (Main)-->
+          <section
+            class="grid md:grid-cols-[80%_15%] w-[50%] md:w-[105%] justify-evenly justify-stretch bg-white shadow-sm pt-6 px-6 mr-4 rounded-xl"
+          >
+            <div class="flex flex-col">
+              <h5 class="w-[100%] text-[16px]">
+                The primary focal area in Grade 2 are making comparisions within
+                the base-10 place value system, solving problems with addition
+                and subtraction within 1,000 and building foundations for
+                multiplication.
+              </h5>
+              <div class="flex flex-col-4 w-3/4 my-8">
+                <div class="flex space-x-2 mr-2">
+                  <img class="h-8 w-8" src="../image/icon/students.svg" />
+                  <div>
+                    <h5 class="text-[16px]">255</h5>
+                    <p class="text-[12px]">Student</p>
+                  </div>
+                </div>
+                <div class="flex space-x-2 mx-2">
+                  <img class="h-8 w-8" src="../image/icon/post.svg" />
+                  <div>
+                    <h5 class="text-[16px]">180</h5>
+                    <p class="text-[12px]">Posts</p>
+                  </div>
+                </div>
+                <div class="flex space-x-2 mx-2">
+                  <img class="h-8 w-8" src="../image/icon/assignment.svg" />
+                  <div>
+                    <h5 class="text-[16px]">87</h5>
+                    <p class="text-[12px]">Assignments</p>
+                  </div>
+                </div>
+                <div class="flex space-x-2 mx-2">
+                  <img class="h-8 w-8" src="../image/icon/video.svg" />
+                  <div>
+                    <h5 class="text-[16px]">95</h5>
+                    <p class="text-[12px]">Videos</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Section 2 = Graph -->
+            <div
+              class="bar h-[5.9rem] w-[5.9rem] inline-block rounded-full relative top-2 shadow lg:ml-15 xl:ml-20"
+            >
+              <svg class="relative">
+                <circle
+                  stroke-width="12"
+                  cx="52"
+                  cy="52"
+                  r="42"
+                  fill="transparent"
+                  class="stroke-[#CDCEE0] -translate-x-1 -translate-y-1"
+                  stroke-dasharray="327"
+                  stroke-dashoffset="0"
+                ></circle>
+                <circle
+                  stroke-width="12"
+                  cx="52"
+                  cy="52"
+                  r="42"
+                  fill="transparent"
+                  class="stroke-[#4E59E0] -translate-x-1 -translate-y-1"
+                  stroke-dasharray="250"
+                  stroke-dashoffset="calc(200 - (200 * 90 ) / 100)"
+                ></circle>
+              </svg>
+              <h1
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-extrabold"
+              >
+                70%
+              </h1>
+              <h5
+                class="text-[13px] text-gray-500 absolute top-[105%] left-[12%] font-basic"
+              >
+                INPROGRESS
+              </h5>
+            </div>
+          </section>
+          <!-- Section 2 (INSTRUCTORS) -->
+          <section
+            class="w-[35%] bg-white shadow-sm px-4 pt-4 pb-8 mr-14 rounded-xl"
+          >
+            <div class="flex space-x-4">
+              <img class="h-4 w-4" src="../image/icon/profile.svg" />
+              <p class="text-[14px] text-gray-500 font-medium">INSTRUCTORS</p>
+              <span
+                class="inline-flex items-center justify-center px-1.5 py-1 text-xs font-bold leading-none text-white bg-[#4E59E0] rounded-full"
+                >1</span
+              >
+            </div>
+            <hr class="mt-2" />
+            <div class="mt-4 ml-2">
+              <img class="h-10 w-10 m-2" src="../image/img/profile.png" />
+              <p class="text-[12px] mx-1 text-gray-600">Amy Smith</p>
+            </div>
+          </section>
+        </div>
+        <!-- Section 3 (Knowledge & Skills)-->
+        <div class="grid grid-cols-[1220px_645px] gap-0 my-4">
+          <div class="grid grid-rows-[200px_350px] gap-10">
+            <div class="flex justify-start">
+              <section class="grid w-[35%]">
+                <h4 class="text-[24px] mb-2">Knowledge & Skills</h4>
+                <div
+                  class="flex flex-wrap justify-start shadow-sm bg-white px-2 py-7 rounded-xl w-[95%]"
+                >
+                  <a
+                    class="text-[14px] px-1.5 py-1 text-xs font-semibold leading-none text-white bg-[#4E59E0] rounded-full m-1"
+                    >Mathematical Process Standards</a
+                  >
+                  <a
+                    class="text-[14px] px-1.5 py-1 text-xs font-semibold leading-none text-white bg-[#4E59E0] rounded-full m-1"
+                    >Data Analysis</a
+                  >
+                  <a
+                    class="text-[14px] px-1.5 py-1 text-xs font-semibold leading-none text-white bg-[#4E59E0] rounded-full m-1"
+                    >Number and Operations</a
+                  >
+                  <a
+                    class="text-[14px] px-1.5 py-1 text-xs font-semibold leading-none text-white bg-[#4E59E0] rounded-full m-1"
+                    >Personal Financial Literacy</a
+                  >
+                  <a
+                    class="text-[14px] px-1.5 py-1 text-xs font-semibold leading-none text-white bg-[#4E59E0] rounded-full m-1"
+                    >Geometry and Measurement</a
+                  >
+                  <a
+                    class="text-[14px] px-1.5 py-1 text-xs font-semibold leading-none text-white bg-[#4E59E0] rounded-full m-1"
+                    >Algebraic Reasoning</a
+                  >
+                </div>
+              </section>
+              <!-- Section 4 (People)-->
+              <section class="grid">
+                <h4 class="text-[24px] mb-2">People</h4>
+                <div
+                  class="flex justify-around shadow-sm bg-white px-2 py-3 rounded-xl w-[282%]"
+                >
+                  <div class="mx-1">
+                    <h5 class="text-[10px] text-gray-500 text-center">
+                      STUDENTS ADDED
+                    </h5>
+                    <!-- Section 4 = Graph 1 -->
+                    <div
+                      class="bar h-[5.9rem] w-[5.9rem] inline-block rounded-full relative top-2 shadow"
+                    >
+                      <svg class="relative">
+                        <circle
+                          stroke-width="12"
+                          cx="52"
+                          cy="52"
+                          r="42"
+                          fill="transparent"
+                          class="stroke-[#EAAB71] -translate-x-1 -translate-y-1"
+                          stroke-dasharray="327"
+                          stroke-dashoffset="0"
+                        ></circle>
+                        <circle
+                          stroke-width="12"
+                          cx="52"
+                          cy="52"
+                          r="42"
+                          fill="transparent"
+                          class="stroke-[#4E59E0] -translate-x-1 -translate-y-1"
+                          stroke-dasharray="340"
+                          stroke-dashoffset="calc(180 - (220 * 100 ) / 100)"
+                        ></circle>
+                      </svg>
+                      <h1
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                      >
+                        18/20
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="mx-1">
+                    <h5 class="text-[10px] text-gray-500 text-center">
+                      FAMILIES CONNECTED
+                    </h5>
+                    <!-- Section 4 = Graph 2 -->
+                    <div
+                      class="bar h-[5.9rem] w-[5.9rem] inline-block rounded-full relative top-2 shadow"
+                    >
+                      <svg class="relative">
+                        <circle
+                          stroke-width="12"
+                          cx="52"
+                          cy="52"
+                          r="42"
+                          fill="transparent"
+                          class="stroke-[#EAAB71] -translate-x-1 -translate-y-1"
+                          stroke-dasharray="327"
+                          stroke-dashoffset="0"
+                        ></circle>
+                        <circle
+                          stroke-width="12"
+                          cx="52"
+                          cy="52"
+                          r="42"
+                          fill="transparent"
+                          class="stroke-[#4E59E0] -translate-x-1 -translate-y-1"
+                          stroke-dasharray="250"
+                          stroke-dashoffset="calc(200 - (200 * 90 ) / 100)"
+                        ></circle>
+                      </svg>
+                      <h1
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-extrabold"
+                      >
+                        70%
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="mx-1">
+                    <h5 class="text-[10px] text-gray-500 text-center">
+                      INSTRUCTORS
+                    </h5>
+                    <!-- Section 4 = Graph 3 -->
+                    <div
+                      class="bar h-[5.9rem] w-[5.9rem] inline-block rounded-full relative top-2 shadow"
+                    >
+                      <svg class="relative">
+                        <circle
+                          stroke-width="12"
+                          cx="52"
+                          cy="52"
+                          r="42"
+                          fill="transparent"
+                          class="stroke-[#EAAB71] -translate-x-1 -translate-y-1"
+                          stroke-dasharray="327"
+                          stroke-dashoffset="0"
+                        ></circle>
+                        <circle
+                          stroke-width="12"
+                          cx="52"
+                          cy="52"
+                          r="42"
+                          fill="transparent"
+                          class="stroke-[#4E59E0] -translate-x-1 -translate-y-1"
+                          stroke-dasharray="200"
+                          stroke-dashoffset="calc(200 - (200 * 90 ) / 100)"
+                        ></circle>
+                      </svg>
+                      <h1
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+                      >
+                        1/2
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <div class="flex justify-evenly w-[111.5%]">
+              <!-- Section 5 (Upcoming)-->
+              <section class="w-[80.3%] mr-4">
+                <div class="flex justify-between mb-2">
+                  <h5 class="text-[24px]">Upcoming</h5>
+                  <div class="flex">
+                    <img class="h-10 w-10" src="../image/icon/list-menu.svg" />
+                    <img class="h-10 w-10" src="../image/icon/calender-2.svg" />
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="flex justify-between shadow-sm bg-white p-4 rounded-xl my-2 w-[100%]"
+                  >
+                    <div>
+                      <h5 class="text-[14px] text-[#455A64]">
+                        Fun with numbers
+                      </h5>
+                      <p class="text-[11px] text-[#FA7902]">
+                        Assignments - 2nd Grade Math
+                      </p>
+                    </div>
+                    <div>
+                      <h5 class="text-[11px] text-[#8C8C8C] text-right">
+                        Due on 2nd Dec
+                      </h5>
+                      <img
+                        class="h-4 w-4 float-right"
+                        src="../image/icon/star.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-between shadow-sm bg-white p-4 rounded-xl my-2 w-[100%]"
+                  >
+                    <div>
+                      <h5 class="text-[14px] text-[#455A64]">
+                        Parent teachers meeting
+                      </h5>
+                      <p class="text-[11px] text-[#F2AE00]">
+                        Connection - Meeting
+                      </p>
+                    </div>
+                    <div>
+                      <h5 class="text-[11px] text-[#8C8C8C] text-right">
+                        On 2nd Dec at 10:00 am
+                      </h5>
+                      <img
+                        class="h-4 w-4 float-right"
+                        src="../image/icon/star.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-between shadow-sm bg-white p-4 rounded-xl my-2 w-[100%]"
+                  >
+                    <div>
+                      <h5 class="text-[14px] text-[#455A64]">Online class</h5>
+                      <p class="text-[11px] text-[#F2AE00]">
+                        Connection - Virtual class
+                      </p>
+                    </div>
+                    <div>
+                      <h5 class="text-[11px] text-[#8C8C8C] text-right">
+                        On 2nd Dec at 11:03 am
+                      </h5>
+                      <img
+                        class="h-4 w-4 float-right"
+                        src="../image/icon/star.svg"
+                      />
+                    </div>
+                  </div>
+                  <div
+                    class="flex justify-between shadow-sm bg-white p-4 rounded-xl my-2 w-[100%]"
+                  >
+                    <div>
+                      <h5 class="text-[14px] text-[#455A64]">
+                        Fun with decimals
+                      </h5>
+                      <p class="text-[11px] text-[#F2AE00]">
+                        Assignments - 2nd Grade Math
+                      </p>
+                    </div>
+                    <div>
+                      <h5 class="text-[11px] text-[#8C8C8C] text-right">
+                        Due on 5th Dec
+                      </h5>
+                      <img
+                        class="h-4 w-4 float-right"
+                        src="../image/icon/star.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <!-- Section 6 (Quick Links) -->
+              <section class="w-[90.3%] mr-4">
+                <div class="flex justify-between mb-2">
+                  <h5 class="text-[24px]">Quick Links</h5>
+                  <div>
+                    <img class="h-8 w-8" src="../image/icon/add.svg" />
+                  </div>
+                </div>
+                <div class="shadow-sm bg-white p-4 rounded-xl w-[100%] h-[88%]">
+                  <div
+                    class="flex justify-between justify-items-center border-b-[1px] border-[#E4E4E4] my-2"
+                  >
+                    <h5 class="text-[16px] text-[#4E59E0] mb-2">New Post</h5>
+                    <img class="h-6 w-6" src="../image/icon/delete.svg" />
+                  </div>
+                  <div
+                    class="flex justify-between justify-items-center border-b-[1px] border-[#E4E4E4] my-2"
+                  >
+                    <h5 class="text-[16px] text-[#4E59E0] mb-2">New Message</h5>
+                    <img class="h-6 w-6" src="../image/icon/delete.svg" />
+                  </div>
+                  <div
+                    class="flex justify-between justify-items-center border-b-[1px] border-[#E4E4E4] my-2"
+                  >
+                    <h5 class="text-[16px] text-[#4E59E0] mb-2">
+                      New Assignment
+                    </h5>
+                    <img class="h-6 w-6" src="../image/icon/delete.svg" />
+                  </div>
+                  <div
+                    class="flex justify-between justify-items-center border-b-[1px] border-[#E4E4E4] my-2"
+                  >
+                    <h5 class="text-[16px] text-[#4E59E0] mb-2">New Connect</h5>
+                    <img class="h-6 w-6" src="../image/icon/delete.svg" />
+                  </div>
+                </div>
+              </section>
+              <!-- Section 7 (To Do List) -->
+              <section class="w-[90.3%]">
+                <div class="flex justify-between mb-2">
+                  <h5 class="text-[24px]">To Do List</h5>
+                  <div class="flex">
+                    <img class="h-8 w-8" src="../image/icon/add.svg" />
+                  </div>
+                </div>
+                <div class="shadow-sm bg-white p-4 rounded-xl w-[100%] h-[88%]">
+                  <div
+                    class="flex justify-between justify-items-center border-b-[1px] border-[#E4E4E4] my-2"
+                  >
+                    <div class="mb-2">
+                      <input type="checkbox" />
+                      <label class="text-[16px] text-[#4E59E0]"
+                        >Check asssignments for the week</label
+                      >
+                    </div>
+                    <img class="h-6 w-6" src="../image/icon/delete.svg" />
+                  </div>
+                  <div
+                    class="flex justify-between justify-items-center border-b-[1px] border-[#E4E4E4] my-2"
+                  >
+                    <div class="mb-2">
+                      <input type="checkbox" />
+                      <label class="text-[16px] text-[#4E59E0]"
+                        >Jane's parents meeting</label
+                      >
+                    </div>
+                    <img class="h-6 w-6" src="../image/icon/delete.svg" />
+                  </div>
+                  <div
+                    class="flex justify-between justify-items-center border-b-[1px] border-[#E4E4E4] my-2"
+                  >
+                    <div class="mb-2">
+                      <input type="checkbox" />
+                      <label class="text-[16px] text-[#4E59E0]"
+                        >Create my new blog post</label
+                      >
+                    </div>
+                    <img class="h-6 w-6" src="../image/icon/delete.svg" />
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- Section 9 (RECENT NOTIFICATIONS) -->
+          <section
+            class="w-[70%] h-[100%] shadow-sm bg-white p-4 rounded-xl ml-[23.5%]"
+          >
+            <div class="flex">
+              <img class="h-5 w-5 m-1" src="../image/icon/bell.svg" />
+              <h6 class="text[12px] text-gray-500 mx-1 font-medium">
+                RECENT NOTIFICATIONS
+              </h6>
+              <span
+                class="inline-flex items-center mx-1 px-1.5 py-1 text-xs font-bold leading-none text-white bg-[#CF6F64] rounded-full"
+                >5</span
+              >
+            </div>
+            <div class="flex border-t-2 my-4 pt-4 justify-between bg-[#F8F8F8]">
+              <a
+                class="px-8 pb-4 my-1 text-[12px] text-black -mb-px font-medium border-b-4 border-[#4E59E0]"
+                >ALL</a
+              >
+              <a class="px-8 pb-4 my-1 text-[12px] text-gray-500 font-medium"
+                >SUBMISSIONS</a
+              >
+              <a class="px-8 pb-4 my-1 text-[12px] text-gray-500 font-medium"
+                >REPORTS</a
+              >
+            </div>
+            <div class="grid overflow-y-scroll">
+              <h4 class="text-[16px] text-[#455A64] mb-2">
+                Class Report - Weekly (22nd - 26th Nov,21)
+              </h4>
+              <div class="border-b-[2px] border-dashed border-[#C7C7C7]">
+                <span class="text-[11px] text-gray-500 font-medium"
+                  >11:40 AM</span
+                >
+                <p class="text-[14px] text-black font-medium pt-2 pb-4">
+                  Tom Cruise submitted response to assignment "Addition"
+                </p>
+              </div>
+              <div class="border-b-[2px] border-dashed border-[#C7C7C7] mt-2">
+                <div class="flex">
+                  <span class="text-[11px] text-gray-500 font-medium"
+                    >11:10 AM</span
+                  >
+                  <li class="text-[12px] text-[#CF6F64] ml-2">
+                    Waiting Approval
+                  </li>
+                </div>
+                <p class="text-[14px] text-black font-medium pt-2 pb-4">
+                  Usain Bolt wants to add a post on Journal
+                </p>
+              </div>
+              <div class="border-b-[2px] border-dashed border-[#C7C7C7] mt-2">
+                <div class="flex">
+                  <span class="text-[11px] text-gray-500 font-medium"
+                    >11:00 AM</span
+                  >
+                  <li class="text-[12px] text-[#CF6F64] ml-2">
+                    Waiting Approval
+                  </li>
+                </div>
+                <p class="text-[14px] text-black font-medium pt-2 pb-4">
+                  Venus WIlliams has commented on Tom Hanks Post - "Great Post"
+                </p>
+              </div>
+              <div class="border-b-[2px] border-dashed border-[#C7C7C7] mt-2">
+                <div class="flex">
+                  <span class="text-[11px] text-gray-500 font-medium"
+                    >10:00 AM</span
+                  >
+                  <li class="text-[12px] text-[#CF6F64] ml-2">
+                    Waiting Approval
+                  </li>
+                </div>
+                <p class="text-[14px] text-black font-medium pt-2 pb-4">
+                  Will Smith submitted response to assignements "Fun with
+                  Shapes"
+                </p>
+              </div>
+              <div class="border-b-[2px] border-dashed border-[#C7C7C7] mt-2">
+                <div class="flex">
+                  <span class="text-[11px] text-gray-500 font-medium"
+                    >11:40 AM</span
+                  >
+                </div>
+                <p class="text-[14px] text-black font-medium pt-2 pb-4">
+                  Tom Cruise Submitted response to assignment "Addition"
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function sidebar() {
+        let sideBar = document.querySelector(".nu-sidebar");
+        let currentWidth = sideBar.style.width;
+        if (currentWidth === "13rem") {
+          sideBar.style.width = "3.5rem";
+        } else {
+          sideBar.style.width = "13rem";
+        }
+      }
+    </script>
+  </body>
+</html>
